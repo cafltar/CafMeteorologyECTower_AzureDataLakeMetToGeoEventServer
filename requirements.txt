@@ -1,0 +1,8 @@
+azure-functions
+arrow
+pandas
+azure-core
+azure-storage-file-datalake
+azure-identity
+pathlib
+uri

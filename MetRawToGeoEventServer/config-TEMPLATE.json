@@ -1,0 +1,76 @@
+{
+  "agcrosREST": "https://pdieventserver.azurecloudgov.us/geoevent/rest/receiver/nal-met-rest-json-multi-id-in",
+  "featureSvcInfo" : {
+    "featureSvcREST" : "https://pdient.azurecloudgov.us/server/rest/services/Hosted/NalMetTest/FeatureServer/0",
+	  "username" : "",
+	  "password" : ""
+  },
+  "inputType" : {
+    "fileType" : "caf",
+    "fileExt" : ".dat"
+   },
+  "postDataMap": {
+    "site_id": "LTARSiteAcronym",
+    "station_id": "StationID",
+    "datetime": "TIMESTAMP",
+    "record_type": "RecordType",
+    "air_temp_c": "amb_tmpr_Avg",
+    "wind_speed_ms": "rslt_wnd_spd",
+    "wind_dir_deg": "wnd_dir_compass",
+    "rh_pct": "RH_Avg",
+    "precip_mm": "Precipitation_Tot",
+    "air_press": "amb_press_Avg",
+    "par": "PAR_density_Avg",
+    "batt_v": "batt_volt_Avg",
+    "logger_temp_c": "panel_tmpr_Avg"
+  },
+  "station_coords": [
+    {
+      "site_id": "CAF",
+      "station_id": "US-CF1",
+      "lat": 46.78152,
+      "long": -117.08205,
+      "utc_offset": "-0700",
+      "name": "Cook East Flux Tower"
+    },
+    {
+      "site_id": "CAF",
+      "station_id": "US-CF2",
+      "lat": 46.784037,
+      "long": -117.09083,
+      "utc_offset": "-0700",
+      "name": "Cook West Flux Tower"
+    },
+    {
+      "site_id": "CAF",
+      "station_id": "002",
+      "lat": 46.78333,
+      "long": -117.0833,
+      "utc_offset": "-0700",
+      "name": "Cook Farm Field D"
+    },
+    {
+      "site_id": "CAF",
+      "station_id": "US-CF3",
+      "lat": 46.755104,
+      "long": -117.126052,
+      "utc_offset": "-0700",
+      "name": "Boyd North Flux Tower"
+    },
+    {
+      "site_id": "CAF",
+      "station_id": "US-CF4",
+      "lat": 46.75181,
+      "long": -117.128502,
+      "utc_offset": "-0700",
+      "name": "Boyd South Flux Tower"
+    }
+  ],
+  "datalakeInfo": {
+    "storageAccountName": "cafltardatalake",
+    "fileSystemName": "raw",
+    "clientId": "",
+    "tenantId": "",
+    "clientSecret": ""
+  }
+}
